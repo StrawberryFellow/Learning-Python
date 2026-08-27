@@ -37,7 +37,12 @@ def calculator():
                 
         ##Gets the value for the second number in the sum
         while True:
-            try:           
+            try:
+                num2=float
+                if userSelect == 4:
+                   if num2==0:
+                    print('You cannot divide by 0!!')
+                    continue 
                 num2=float(input('Please enter your second number: '))
                 break
             except ValueError:
